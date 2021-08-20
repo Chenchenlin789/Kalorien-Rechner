@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kalorien Rechner</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kalorien Rechner</h1>
+    </header>
+
+    <main>
+        <form>
+            <label> Körpergröße</label><br>
+            <input type="text" name="" id="größe">
+            <br>
+            <!-- linebreak -->
+            <label> Alter</label><br>
+            <input type="text" name="" id="alter">
+            <!-- linebreak -->
+            <br>
+            <label> Gewicht</label><br>
+            <input type="text" name="" id="gewicht">
+
+
+            <br>
+            <!-- linebreak -->
+
+
+            <h2>Körperbau</h2>
+            <input type="radio" name="choice" checked value="" id="female">
+            <label> Weiblich </label><br>
+            <input type="radio" name="choice" value="" id="male">
+            <label>Männlich </label><br>
+
+
+            <br>
+
+
+            <!-- Körperliche Belastung-->
+            <label for="">option</label>
+            <select id="pal" name="pal" onchange='getPal()'>
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in
+                    der Freizeit, z.B. Büroarbeit
+                </option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="1,9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                    Mechaniker, Hausfrauen</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+
+            <input type="button" name="" value="Submit" onclick="calc()">
+        </form>
+    </main>
+    <footer>
+
+        <div id="result1">
+            <h2>Grundumsatz:</h2>
+        </div>
+        <div id="result2">
+            <h2>Gesamtumsatz:</h2>
+        </div>
+
+    </footer>
+
+
+
+    <script src="assets/js/main.js"> </script>
+</body>
+
+</html>
