@@ -24,14 +24,14 @@ function calc() {
         console.log('test1')
 
 
-        result1.innerHTML = grundsatzFemale(weight.value, age.value, size.value).toFixed(2)
+        result1.innerHTML = 'Grundumsatz: ' + grundsatzFemale(weight.value, age.value, size.value).toFixed(2)
 
-        result2.innerHTML = (grundsatzFemale(weight.value, age.value, size.value) * getPal()).toFixed(2)
+        result2.innerHTML = 'Gesamtumsatz: ' + (grundsatzFemale(weight.value, age.value, size.value) * getPal()).toFixed(2)
 
     } else {
-        result1.innerHTML = grundsatzMale(weight.value, age.value, size.value).toFixed(2)
+        result1.innerHTML = 'Grundumsatz: ' + grundsatzMale(weight.value, age.value, size.value).toFixed(2)
 
-        result2.innerHTML = (grundsatzMale(weight.value, age.value, size.value) * getPal()).toFixed(2)
+        result2.innerHTML = 'Gesamtumsatz: ' + (grundsatzMale(weight.value, age.value, size.value) * getPal()).toFixed(2)
         console.log(getPal())
         console.log('test2')
         console.log(grundsatzMale(weight.value, age.value, size.value) * Number(getPal()))
